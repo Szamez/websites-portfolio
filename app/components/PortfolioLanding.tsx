@@ -602,10 +602,10 @@ export function PortfolioLanding() {
         </div>
       </section>
 
-      <section id="contact" className="bg-white px-5 py-20 sm:px-6 sm:py-24 lg:px-8">
-        <div className="mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-[#171411] text-white shadow-2xl shadow-black/20">
-          <div className="grid gap-8 p-6 sm:p-8 lg:grid-cols-[1.12fr_0.88fr] lg:p-10">
-            <div className="rounded-[1.5rem] bg-white/[0.06] p-6 sm:p-8">
+      <section id="contact" className="bg-white px-4 py-20 sm:px-6 sm:py-24 lg:px-8">
+        <div className="mx-auto max-w-6xl overflow-hidden rounded-[1.5rem] bg-[#171411] text-white shadow-2xl shadow-black/20 sm:rounded-[2rem]">
+          <div className="grid min-w-0 gap-5 p-4 sm:gap-8 sm:p-8 lg:grid-cols-[1.12fr_0.88fr] lg:p-10">
+            <div className="min-w-0 rounded-[1.25rem] bg-white/[0.06] p-5 sm:rounded-[1.5rem] sm:p-8">
               <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-[#ffd28a]">
                 {t.contact.eyebrow}
               </p>
@@ -619,21 +619,21 @@ export function PortfolioLanding() {
                 {t.contact.note}
               </p>
             </div>
-            <div className="flex flex-col justify-between rounded-[1.5rem] bg-white p-6 text-[#171411] sm:p-8">
-              <div>
+            <div className="flex min-w-0 flex-col justify-between rounded-[1.25rem] bg-white p-5 text-[#171411] sm:rounded-[1.5rem] sm:p-8">
+              <div className="min-w-0">
                 <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#8a5b16]">
                   {t.contact.emailLabel}
                 </p>
                 <a
                   href={mailtoHref}
-                  className="mt-4 block break-words text-2xl font-semibold leading-tight text-[#171411] transition hover:text-[#8a5b16]"
+                  className="mt-4 block min-w-0 max-w-full text-[clamp(1rem,5.5vw,1.5rem)] font-semibold leading-tight text-[#171411] transition [overflow-wrap:anywhere] hover:text-[#8a5b16]"
                 >
                   {email}
                 </a>
               </div>
               <a
                 href={mailtoHref}
-                className="mt-10 inline-flex min-h-12 items-center justify-center rounded-full bg-[#d99b39] px-6 py-3 text-sm font-bold text-[#171411] shadow-lg shadow-[#d99b39]/25 transition hover:-translate-y-0.5 hover:bg-[#e7ad53]"
+                className="mt-8 inline-flex min-h-12 items-center justify-center rounded-full bg-[#d99b39] px-5 py-3 text-center text-sm font-bold text-[#171411] shadow-lg shadow-[#d99b39]/25 transition hover:-translate-y-0.5 hover:bg-[#e7ad53] sm:mt-10 sm:px-6"
               >
                 {t.contact.button}
               </a>
